@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azzle - AI Technology & Startup HTML Template</title>
+    <meta name="description" content="AIMass Tailwind based SASS Template" />
+
+    <!-- Favicon  -->
+    <link rel="icon" href="{% static 'assets/img/favicon.png' %}" />
+
+    <!-- Site font -->
+    <link href="{% static 'assets/fonts/fonts.css' %}" rel="stylesheet" />
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/vendors/swiper-bundle.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/vendors/jos.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/vendors/menu.css' %}" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/custom.css' %}" />
+
+    <!-- Development css -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
+
+    <!-- Production css -->
+    <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+</head>
+<body>
+    {% include "layouts/header.html" %}
+    {% block about %}{% endblock about %}
+    {% block blog-details %}{% endblock blog-details %}
+    {% block blog %}{% endblock blog %}
+    {% block contact %}{% endblock contact %}
+    {% block error-404 %}{% endblock error-404 %}
+    {% block faq-2 %}{% endblock faq-2 %}
+    {% block faq %}{% endblock faq %}
+    {% block home-2 %}{% endblock home-2 %}
+    {% block home-3 %}{% endblock home-3 %}
+    {% block home-4 %}{% endblock home-4 %}
+    {% block home %}{% endblock home %}
+    {% block login %}{% endblock login %}
+    {% block portfolio-details %}{% endblock portfolio-details %}
+    {% block portfolio %}{% endblock portfolio %}
+    {% block pricing %}{% endblock pricing %}
+    {% block reset-password %}{% endblock reset-password %}
+    {% block service-details %}{% endblock service-details %}
+    {% block services %}{% endblock services %}
+    {% block signup %}{% endblock signup %}
+    {% block team-details %}{% endblock team-details %}
+    {% block teams %}{% endblock teams %}
+    {% include "layouts/footer.html" %}
+
+
+
+    <!--Vendor js-->
+    <script src="{% static 'assets/js/vendors/counterup.js' %}" type="module"></script>
+    <script src="{% static 'assets/js/vendors/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendors/fslightbox.js' %}"></script>
+    <script src="{% static 'assets/js/vendors/jos.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendors/menu.js' %}"></script>
+
+    <!-- Main js -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,762 @@
+{% extends "base.html" %}
+{% load static %}
+{% block pricing %}
+<body>
+    <div class="page-wrapper relative z-[1] bg-white">
+        <main class="main-wrapper relative overflow-hidden">
+            <!--...::: Breadcrumb Section Start :::... -->
+            <section id="section-breadcrumb">
+                <!-- Section Spacer -->
+                <div class="breadcrumb-wrapper">
+                    <!-- Section Container -->
+                    <div class="global-container">
+                        <div class="breadcrumb-block">
+                            <h1 class="breadcrumb-title">Pricing Plans</h1>
+                            <ul class="breadcrumb-nav">
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li>Pricing Plans</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Spacer -->
+            </section>
+            <!--...::: Breadcrumb Section End :::... -->
+
+            <!--...::: Pricing Section Start :::... -->
+            <section class="pricing-section">
+                <!-- Section Spacer -->
+                <div class="pb-20 xl:pb-[150px]">
+                    <!-- Section Container -->
+                    <div class="global-container">
+                        <!-- Section Content Block -->
+                        <div class="jos mb-10 text-center lg:mb-12">
+                            <div class="mx-auto max-w-md lg:max-w-3xl xl:max-w-[950px]">
+                                <h2>Find a flexible plan that fits your business</h2>
+                            </div>
+                        </div>
+                        <!-- Section Content Block -->
+                        <!-- Pricing Block -->
+                        <div class="container mx-auto">
+                            <!-- Tab buttons -->
+                            <div class="jos flex justify-center" data-jos_delay="0.3">
+                                <div class="inline-flex space-x-4 rounded-[50px] border-2 border-black font-semibold">
+                                    <button class="tab-button price-button active" data-tab="monthly">
+                                        Monthly
+                                    </button>
+                                    <button class="tab-button price-button" data-tab="annually">
+                                        Annually
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Pricing Block -->
+                            <div class="mt-12 lg:mt-16 xl:mt-20">
+                                <!-- Price List -->
+                                <ul id="monthly" class="tab-content grid grid-cols-1 gap-6 md:grid-cols-2 xxl:grid-cols-4">
+                                    <!-- Price Item -->
+                                    <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                        <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Free
+                                        </h3>
+                                        <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">1 member</span>
+
+                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                        <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                            $0<span class="text-lg font-semibold">/Per month</span>
+                                        </h4>
+                                        <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Ideal for individuals person and small businesses just
+                                            getting started.
+                                        </p>
+                                        <!-- Price Info List -->
+                                        <ul class="mb-10 flex flex-col gap-y-3">
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                AI-Ready Data Prep
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Feature Engineering
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Classification Models
+                                            </li>
+                                        </ul>
+                                        <!-- Price Info List -->
+                                        <a href="{% url 'pricing' %}" class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white">Choose the plan</a>
+                                    </li>
+                                    <!-- Price Item -->
+                                    <!-- Price Item -->
+                                    <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                        <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Beginner
+                                        </h3>
+                                        <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up to 10 members</span>
+
+                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                        <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                            $25<span class="text-lg font-semibold">/Per month</span>
+                                        </h4>
+                                        <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            This is an excellent option for people & small
+                                            businesses who are starting out.
+                                        </p>
+                                        <!-- Price Info List -->
+                                        <ul class="mb-10 flex flex-col gap-y-3">
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                AI-Ready Data Prep
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Feature Engineering
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Classification Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Regression Models
+                                            </li>
+                                        </ul>
+                                        <!-- Price Info List -->
+                                        <a href="{% url 'pricing' %}" class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white">Choose the plan</a>
+                                    </li>
+                                    <!-- Price Item -->
+                                    <!-- Price Item -->
+                                    <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                        <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Starter
+                                        </h3>
+                                        <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up to 50 members</span>
+
+                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                        <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                            $89<span class="text-lg font-semibold">/Per month</span>
+                                        </h4>
+                                        <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            This plan is suitable for e-commerce stores as well as
+                                            professional blogs.
+                                        </p>
+                                        <!-- Price Info List -->
+                                        <ul class="mb-10 flex flex-col gap-y-3">
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                AI-Ready Data Prep
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Feature Engineering
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Classification Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Regression Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Time Series Models
+                                            </li>
+                                        </ul>
+                                        <!-- Price Info List -->
+                                        <a href="{% url 'pricing' %}" class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white">Choose the plan</a>
+                                    </li>
+                                    <!-- Price Item -->
+                                    <!-- Price Item -->
+                                    <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                        <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Pro
+                                        </h3>
+                                        <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up to 100 members</span>
+
+                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                        <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                            $199<span class="text-lg font-semibold">/Per month</span>
+                                        </h4>
+                                        <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Ideal for handling complicated projects enterprise-level
+                                            projects, and websites.
+                                        </p>
+                                        <!-- Price Info List -->
+                                        <ul class="mb-10 flex flex-col gap-y-3">
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                AI-Ready Data Prep
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Feature Engineering
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Classification Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Regression Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Time Series Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Clustering models
+                                            </li>
+                                        </ul>
+                                        <!-- Price Info List -->
+                                        <a href="{% url 'pricing' %}" class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white">Choose the plan</a>
+                                    </li>
+                                    <!-- Price Item -->
+                                </ul>
+                                <!-- Price List -->
+                                <!-- Price List -->
+                                <ul id="annually" class="tab-content grid hidden grid-cols-1 gap-6 md:grid-cols-2 xxl:grid-cols-4">
+                                    <!-- Price Item -->
+                                    <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                        <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Free
+                                        </h3>
+                                        <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">1 member</span>
+
+                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                        <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                            $0<span class="text-lg font-semibold">/Annual</span>
+                                        </h4>
+                                        <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Ideal for individuals person and small businesses just
+                                            getting started.
+                                        </p>
+                                        <!-- Price Info List -->
+                                        <ul class="mb-10 flex flex-col gap-y-3">
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                AI-Ready Data Prep
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Feature Engineering
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Classification Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Regression Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Time Series Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Clustering models
+                                            </li>
+                                        </ul>
+                                        <!-- Price Info List -->
+                                        <a href="{% url 'pricing' %}" class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white">Choose the plan</a>
+                                    </li>
+                                    <!-- Price Item -->
+                                    <!-- Price Item -->
+                                    <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                        <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Beginner
+                                        </h3>
+                                        <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up to 10 members</span>
+
+                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                        <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                            $240<span class="text-lg font-semibold">/Annual</span>
+                                        </h4>
+                                        <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            This is an excellent option for people & small
+                                            businesses who are starting out.
+                                        </p>
+                                        <!-- Price Info List -->
+                                        <ul class="mb-10 flex flex-col gap-y-3">
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                AI-Ready Data Prep
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Feature Engineering
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Classification Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Regression Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Time Series Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Clustering models
+                                            </li>
+                                        </ul>
+                                        <!-- Price Info List -->
+                                        <a href="{% url 'pricing' %}" class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white">Choose the plan</a>
+                                    </li>
+                                    <!-- Price Item -->
+                                    <!-- Price Item -->
+                                    <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                        <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Starter
+                                        </h3>
+                                        <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up to 50 members</span>
+
+                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                        <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                            $960<span class="text-lg font-semibold">/Annual</span>
+                                        </h4>
+                                        <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            This plan is suitable for e-commerce stores as well as
+                                            professional blogs.
+                                        </p>
+                                        <!-- Price Info List -->
+                                        <ul class="mb-10 flex flex-col gap-y-3">
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                AI-Ready Data Prep
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Feature Engineering
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Classification Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Regression Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Time Series Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Clustering models
+                                            </li>
+                                        </ul>
+                                        <!-- Price Info List -->
+                                        <a href="{% url 'pricing' %}" class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white">Choose the plan</a>
+                                    </li>
+                                    <!-- Price Item -->
+                                    <!-- Price Item -->
+                                    <li class="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black" data-jos_animation="flip" data-jos_delay="0">
+                                        <h3 class="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Pro
+                                        </h3>
+                                        <span class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up to 100 members</span>
+
+                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                        <h4 class="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                            $1800<span class="text-lg font-semibold">/Annual</span>
+                                        </h4>
+                                        <p class="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Ideal for handling complicated projects enterprise-level
+                                            projects, and websites.
+                                        </p>
+                                        <!-- Price Info List -->
+                                        <ul class="mb-10 flex flex-col gap-y-3">
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                AI-Ready Data Prep
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Feature Engineering
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Classification Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Regression Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Time Series Models
+                                            </li>
+                                            <li class="flex items-center gap-x-3 font-bold group-hover:text-white">
+                                                <div class="relative h-[24px] w-[24px]">
+                                                    <img src="{% static 'assets/img/th-1/icon-black-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="h-full w-full object-cover" />
+                                                    <img src="{% static 'assets/img/th-1/icon-orange-badge-check.svg' %}" alt="icon-black-badge-check" width="24" height="24" class="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100" />
+                                                </div>
+                                                Clustering models
+                                            </li>
+                                        </ul>
+                                        <!-- Price Info List -->
+                                        <a href="{% url 'pricing' %}" class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white">Choose the plan</a>
+                                    </li>
+                                    <!-- Price Item -->
+                                </ul>
+                                <!-- Price List -->
+                            </div>
+                            <!-- Pricing Block -->
+                        </div>
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Spacer -->
+            </section>
+            <!--...::: Pricing Section End :::... -->
+
+            <!--...::: FAQ Section Start :::... -->
+            <section class="faq-section">
+                <!-- Section Spacer -->
+                <div class="pb-40 xl:pb-[200px]">
+                    <!-- Section Container -->
+                    <div class="global-container">
+                        <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2">
+                            <!-- FAQ Left Block -->
+                            <div class="jos flex flex-col" data-jos_animation="fade-right">
+                                <!-- Section Content Block -->
+                                <div class="mb-8 text-left lg:mb-16 xl:mb-6">
+                                    <div class="mx-auto md:mx-0 md:max-w-none">
+                                        <h2>Freely ask us for more information</h2>
+                                    </div>
+                                </div>
+                                <!-- Section Content Block -->
+                                <div class="text-lg leading-[1.4] lg:text-[21px]">
+                                    <p class="mb-7 last:mb-0">
+                                        Our AI SaaS solutions can be quickly deployed, enabling
+                                        users to start benefiting from AI capabilities without
+                                        lengthy setup and development times in fast-paced
+                                        industries.
+                                    </p>
+                                    <a href="{% url 'faq' %}" class="button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white">Ask you questions</a>
+                                </div>
+                            </div>
+                            <!-- FAQ Left Block -->
+
+                            <!-- FAQ Right Block -->
+                            <div class="jos md:ml-10 lg:ml-20 xl:ml-32" data-jos_animation="fade-left">
+                               <!-- Accordion-->
+                        <ul class="accordion tab-content flex flex-col gap-y-6" id="general-questions">
+                            <!-- Accordion items -->
+                            <li class="jos accordion-item is-2 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px] active"
+                                data-jos_delay="0.1">
+                                <div
+                                    class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
+                                    <h5>What is Artificial Intelligence (AI)?</h5>
+                                    <div class="accordion-icon">
+                                        <img src="{% static 'assets/img/plus.svg' %}" alt="plus" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-[#2C2C2C]">
+                                    <p>
+                                        AI refers to the simulation of human intelligence in
+                                        machines, enabling them to perform tasks that
+                                        typically require human intelligence, such as
+                                        learning, reasoning, problem-solving, and
+                                        decision-making.
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- Accordion items -->
+                            <!-- Accordion items -->
+                            <li class="jos accordion-item is-2 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
+                                data-jos_delay="0.1">
+                                <div
+                                    class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
+                                    <h5>What are the different types of AI?</h5>
+                                    <div class="accordion-icon">
+                                        <img src="{% static 'assets/img/plus.svg' %}" alt="plus" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-[#2C2C2C]">
+                                    <p>
+                                        AI refers to the simulation of human intelligence in
+                                        machines, enabling them to perform tasks that
+                                        typically require human intelligence, such as
+                                        learning, reasoning, problem-solving, and
+                                        decision-making.
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- Accordion items -->
+                            <!-- Accordion items -->
+                            <li class="jos accordion-item is-2 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
+                                data-jos_delay="0.1">
+                                <div
+                                    class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
+                                    <h5>What are some practical applications of AI?</h5>
+                                    <div class="accordion-icon">
+                                        <img src="{% static 'assets/img/plus.svg' %}" alt="plus" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-[#2C2C2C]">
+                                    <p>
+                                        AI refers to the simulation of human intelligence in
+                                        machines, enabling them to perform tasks that
+                                        typically require human intelligence, such as
+                                        learning, reasoning, problem-solving, and
+                                        decision-making.
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- Accordion items -->
+                            <!-- Accordion items -->
+                            <li class="jos accordion-item is-2 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
+                                data-jos_delay="0.1">
+                                <div
+                                    class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
+                                    <h5>
+                                        What is the difference between AI and machine
+                                        learning?
+                                    </h5>
+                                    <div class="accordion-icon">
+                                        <img src="{% static 'assets/img/plus.svg' %}" alt="plus" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-[#2C2C2C]">
+                                    <p>
+                                        AI refers to the simulation of human intelligence in
+                                        machines, enabling them to perform tasks that
+                                        typically require human intelligence, such as
+                                        learning, reasoning, problem-solving, and
+                                        decision-making.
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- Accordion items -->
+                            <!-- Accordion items -->
+                            <li class="jos accordion-item is-2 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
+                                data-jos_delay="0.1">
+                                <div
+                                    class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
+                                    <h5>
+                                        How can businesses AI for competitive advantage?
+                                    </h5>
+                                    <div class="accordion-icon">
+                                        <img src="{% static 'assets/img/plus.svg' %}" alt="plus" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-[#2C2C2C]">
+                                    <p>
+                                        AI refers to the simulation of human intelligence in
+                                        machines, enabling them to perform tasks that
+                                        typically require human intelligence, such as
+                                        learning, reasoning, problem-solving, and
+                                        decision-making.
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- Accordion items -->
+                            <!-- Accordion items -->
+                            <li class="jos accordion-item is-2 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
+                                data-jos_delay="0.1">
+                                <div
+                                    class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
+                                    <h5>Can AI replace humans in the workforce?</h5>
+                                    <div class="accordion-icon">
+                                        <img src="{% static 'assets/img/plus.svg' %}" alt="plus" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-[#2C2C2C]">
+                                    <p>
+                                        AI refers to the simulation of human intelligence in
+                                        machines, enabling them to perform tasks that
+                                        typically require human intelligence, such as
+                                        learning, reasoning, problem-solving, and
+                                        decision-making.
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- Accordion items -->
+                            <!-- Accordion items -->
+                            <li class="jos accordion-item is-2 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
+                                data-jos_delay="0.1">
+                                <div
+                                    class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
+                                    <h5>Is AI safe?</h5>
+                                    <div class="accordion-icon">
+                                        <img src="{% static 'assets/img/plus.svg' %}" alt="plus" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-[#2C2C2C]">
+                                    <p>
+                                        AI refers to the simulation of human intelligence in
+                                        machines, enabling them to perform tasks that
+                                        typically require human intelligence, such as
+                                        learning, reasoning, problem-solving, and
+                                        decision-making.
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- Accordion items -->
+                            <!-- Accordion items -->
+                            <li class="jos accordion-item is-2 rounded-[10px] border-[1px] border-[#EAEDF0] bg-white px-7 py-[30px]"
+                                data-jos_delay="0.1">
+                                <div
+                                    class="accordion-header flex items-center justify-between text-xl leading-[1.2] -tracking-[0.5px] lg:text-[28px]">
+                                    <h5>What is the future of AI?</h5>
+                                    <div class="accordion-icon">
+                                        <img src="{% static 'assets/img/plus.svg' %}" alt="plus" />
+                                    </div>
+                                </div>
+                                <div class="accordion-content text-[#2C2C2C]">
+                                    <p>
+                                        AI refers to the simulation of human intelligence in
+                                        machines, enabling them to perform tasks that
+                                        typically require human intelligence, such as
+                                        learning, reasoning, problem-solving, and
+                                        decision-making.
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- Accordion items -->
+                        </ul>
+                        <!-- Accordion-->
+                            </div>
+                            <!-- FAQ Right Block -->
+                        </div>
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Spacer -->
+            </section>
+            <!--...::: FAQ Section End :::... -->
+        </main>
+</body>
+{% endblock pricing %}
